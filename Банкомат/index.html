@@ -1,0 +1,65 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form name="form">
+    <div class="forms">
+        <label for="restart" class="res">Вход в систему<input type="submit" value="restart" name="restart"
+                                                              id="restart"></label>
+        <label for="pin" class="open_pin">
+            <div class=" circle_1">
+                <div class="circle_2"></div>
+            </div>
+        </label>
+        <input type="password" placeholder="pin" name="password" id="pin">
+        <label id="err">ошибка</label>
+    </div>
+    <div class="forms2">
+        <label class="res" id="res">Пинчук Оксана</label>
+        <span class="close"></span>
+        <div class="img"><img src="profile.png" alt="Фото"></div>
+        <div class="info_sum">
+            <div class="cls_balans">
+                <label class="style">Баланс</label>
+                <div id="balans"></div>
+            </div>
+            <div class="sum">
+                <label for="sum" class="lbl_summa">Сумма для снятия</label><input type="number"  name="summa" id="sum">
+            </div>
+        </div>
+        <div class="table">
+            <table>
+                <tr><th>Сумма</th><th>Время</th></tr>
+                <tr><td>1</td><td>2</td></tr>
+                <tr><td>3</td><td>4</td></tr>
+            </table>
+        </div>
+
+    </div>
+
+</form>
+<div id="num_button">
+    <button data-type="1">1</button>
+    <button data-type="2">2</button>
+    <button data-type="3">3</button>
+    <button data-type="4">4</button>
+    <button data-type="5">5</button>
+    <button data-type="6">6</button>
+    <button data-type="7">7</button>
+    <button data-type="8">8</button>
+    <button data-type="9">9</button>
+    <button data-type="del">del</button>
+    <button data-type="0">0</button>
+    <button data-type="ok">ok</button>
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>
