@@ -173,7 +173,7 @@ showTime();
 function balans() {
     var s = parseInt(sum.value);
     var b = document.querySelector("#balans");
-    if (isNaN(s) || s === "") {
+    if (isNaN(s) || s === "" /*|| s <=0*/  ) {
         alert("Укажите сумму");
     } else {
         var arr = [];
@@ -184,7 +184,7 @@ function balans() {
             var blns = parseInt(arrObj[j].balans);
             arr.push(blns);
             if ((document.querySelector("#res").innerHTML) === arrObj[j].name) {
-                arr[j] -= s;
+                arr[j] -= (-s);
                 b.innerHTML = arr[j] + "$";
                 arrObj[j].balans = b.innerHTML;
 
