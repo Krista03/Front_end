@@ -127,6 +127,8 @@ for (var i = 0; i < buttons.length; i++) {
     addEvent(buttons[i]);
 }
 
+
+// кнопки
 function addEvent(button) {
     button.addEventListener('click', event);
 
@@ -160,6 +162,10 @@ function addEvent(button) {
     }
 }
 
+
+
+
+
 function showTime() {
     var ld = new Date();
     var d = ld.toLocaleDateString();
@@ -184,7 +190,12 @@ function balans() {
             var blns = parseInt(arrObj[j].balans);
             arr.push(blns);
             if ((document.querySelector("#res").innerHTML) === arrObj[j].name) {
-                arr[j] -= (-s);
+                if(s < 0){
+                    arr[j] -= (-s);
+                }
+                else if (s > 0) {
+                    arr[j] -= s;
+                }
                 b.innerHTML = arr[j] + "$";
                 arrObj[j].balans = b.innerHTML;
 
